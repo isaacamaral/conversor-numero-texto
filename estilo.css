@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700");
+@import url(https://db.onlinewebfonts.com/c/5c05a50dbbf57a0116cb29f77c3f4a49?family=InterstellarW00-Regular);
+@font-face {
+    font-family: "InterstellarW00-Regular";
+    src: url("//db.onlinewebfonts.com/t/5c05a50dbbf57a0116cb29f77c3f4a49.eot");
+    src: url("//db.onlinewebfonts.com/t/5c05a50dbbf57a0116cb29f77c3f4a49.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/5c05a50dbbf57a0116cb29f77c3f4a49.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/5c05a50dbbf57a0116cb29f77c3f4a49.woff") format("woff"), url("//db.onlinewebfonts.com/t/5c05a50dbbf57a0116cb29f77c3f4a49.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/5c05a50dbbf57a0116cb29f77c3f4a49.svg#InterstellarW00-Regular") format("svg");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    background: #131313;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+}
+
+header {
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(9, 9, 9, 0) 50%, rgba(19, 19, 19, 1) 100%), url(https://images.pexels.com/photos/3771074/pexels-photo-3771074.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) no-repeat center right;
+    background-size: cover;
+}
+
+main {
+    width: 400px;
+    background: #131417a6;
+    margin: 10% auto 25px;
+    position: relative;
+    border-radius: 0 0 15px 15px;
+    border: 2px solid #00d570a1;
+}
+
+.titulo {
+    width: 100%;
+    font-family: "InterstellarW00-Regular";
+    font-size: 20px;
+    padding: 10px;
+    color: #FFF;
+    background: #00d570a1;
+    text-align: center;
+}
+
+.caixa {
+    padding: 15px;
+}
+
+label {
+    font-weight: 300;
+}
+
+input {
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+    margin: 3px 0 15px;
+    outline: none!important;
+    padding: 0 20px;
+    font-size: 22px;
+    align-items: center;
+    color: #FFF;
+    background: transparent;
+    border: 2px solid #00d570a1;
+    border-radius: 0 30px;
+    text-align: center;
+}
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+button {
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 2px solid #e74c3c;
+    border-radius: 10px 0 10px;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    font-size: 1rem;
+    margin: 0 auto;
+    padding: 1.2em 2.8em;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+button:hover, button:focus {
+    color: #00d570a1;
+    outline: 0;
+}
+
+button {
+    border-color: #00d570a1;
+    border-radius: 0;
+    color: #00d570a1;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    -webkit-transition: color 150ms ease-in-out;
+    transition: color 150ms ease-in-out;
+}
+
+button:after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 0;
+    height: 100%;
+    background: #00d570a1;
+    z-index: -1;
+    -webkit-transition: width 150ms ease-in-out;
+    transition: width 150ms ease-in-out;
+}
+
+button:hover {
+    color: #fff;
+}
+
+button:hover:after {
+    width: 110%;
+}
+
+button:active:after {
+    background: #167a4a;
+}
+
+span {
+    width: 100%;
+    margin: 15px 0 0;
+    display: block;
+    font-size: 20px;
+    text-align: center;
+}
+
+footer {
+    width: 75%;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.page-logo {
+    width: 200px;
+    margin: 10px 0;
+}
+
+@media screen and (max-width: 400px) {
+    main {
+        width: 100%;
+        margin: 0 auto 25px;
+        border: 0;
+    }
+    .titulo {
+        font-size: 0.9em;
+    }
+}
