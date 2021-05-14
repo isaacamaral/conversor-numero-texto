@@ -2,7 +2,7 @@ const conversor = document.querySelector('button')
 
 conversor.onclick = () => {
     let numero = Number(document.querySelector('input').value)
-    if (numero < 1 || numero>999999999 /*|| typeof(numero)!="number"*/) {
+    if (numero < 0 || numero>999999999 /*|| typeof(numero)!="number"*/) {
         document.querySelector('span').innerHTML = "Valor inválido!";
     } else {
         let text = conversorNumeroTexto(numero);
