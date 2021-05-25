@@ -35,7 +35,7 @@ function conversorNumeroTexto(numero) {
     else if (numero >= 20 && numero < 100) {
         dezena(numero);
     }
-    else if (numero >= 100 && numero < 999) {
+    else if (numero >= 100 && numero < 1000) {
         centena(numero);
     }
     else if (numero >= 1000 && numero < 1000000) {
