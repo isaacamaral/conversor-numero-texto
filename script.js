@@ -12,7 +12,7 @@ conversor.onclick = () => {
 }
 
 //Trecho de código para clicar automaticamente no botão de converter caso o usuário aperte "enter"
-var input = document.querySelector('input');
+let input = document.querySelector('input');
 input.addEventListener("keyup", function (event) {
     if (event.keyCode === 13) {
         event.preventDefault();
